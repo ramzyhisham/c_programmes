@@ -2,13 +2,13 @@
 #include<conio.h>
 int main()
 {
-int n,l,t;
+int n,i,j;
 printf("Enter a number: ");
 scanf("%d",&n);
-for(l=1,t=n/10;t!=0;t/=10,l*=10);
+for(i=1,j=n/10;j!=0;j/=10,i*=10);
 	printf("\nThe pattern\n");
-	for(t=n;t!=0;t%=l,l/=10)
+	for(j=n;j!=0;j%=i,i/=10)
 	{
-		printf("\n%d",t);
+		printf("\n%d",j);
 	}
 }
